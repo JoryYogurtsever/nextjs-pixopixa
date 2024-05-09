@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 // import Layout from "../components/layout"
 
 class SignUp extends Component {
+  submitHandler() {
+    alert("we are unable to create new accounts at this moment")
+  }
     render() {
       return(
         <>
       {/*<Layout>*/}
-        <form style={{ minHeight: '600px' }}>
+        <form style={{ minHeight: '600px' }} onSubmit={this.submitHandler}>
           <div style={{padding: "10% 20%", backgroundColor: "#EAB700", border: "15px ridge #ce1417"}}>
             <label className="signup-label-element" for="name">Name</label><br />
             <input className="signup-input-element" type="text" name="name" />
